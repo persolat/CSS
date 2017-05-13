@@ -1,0 +1,43 @@
+<!doctype html>
+    <html lang="fr">
+        <head>
+            <meta charset="UTF-8"/>
+            <title> Page test</title> 
+            <link ref="stylesheet" href="css/reset.css" />
+
+            <style>
+                
+                section{border: 2px solid #333;width: 1100px; margin-left: 10px;}
+                
+                section div{ display:table-cell; width:200px; font-size: 14px; font-weight: 400; padding: 0 10px; border-right:2px solid #333; }
+                
+                section div::last{border-right:none;}
+                
+                section div:nth-last-of-type(1) {border-right:none;}
+                
+                .table{width: 200px; font-size: 14px; font-weight: 700;}
+                
+                
+
+            </style>    
+
+        </head>
+
+        <body>
+            <section>
+                
+                <div> <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget purus ac libero porttitor pulvinar quis eget mi. </p> </div> 
+                <div> <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget purus ac libero porttitor pulvinar quis eget mi.</p> </div>
+                <div> <p>Cras in blandit dolor, at ornare nibh. Nullam ultricies metus in semper tempus.</p> </div>
+                <div> <p> Cras in blandit dolor, at ornare nibh.</p> </div>
+                <div> <p> Nullam ultricies metus in semper tempus.</p> </div>
+                <div> <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> </div>
+                
+            </section>    
+            
+            
+
+        </body>    
+
+
+    </html>
