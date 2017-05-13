@@ -1,0 +1,192 @@
+<!doctype html>
+
+	<html lang="fr">
+	
+	<head>
+		<title> FAIRE UN TABLEAU EN  CSS ET FLEX </title>
+		<meta charset="UTF-8"/>
+		<style>
+		
+		#conteneur1{ border: 1px solid #999; width:700px; padding :10px 10px; display:flex; 
+		justify-content:flex-start;}
+		
+		 #conteneur2{ border: 1px solid #999; width:700px; padding :10px 10px; display:flex; 
+		justify-content:flex-end;}
+		
+		 #conteneur3{ border: 1px solid #999; width:700px; padding :10px 10px; display:flex; 
+		justify-content:center;}
+		
+		 #conteneur4{ border: 1px solid #999; width:700px; padding :10px 10px; display:flex; 
+		justify-content:space-between;}
+		
+		#conteneur5{ border: 1px solid #999; width:400px; padding :10px 10px; display:flex; 
+		flex-wrap:wrap;}
+		
+		#conteneur6{ border: 1px solid #999; width:400px; padding :10px 10px; display:flex; 
+		flex-wrap:nowrap;}
+		
+		#conteneur7{ border: 1px solid #999; width:400px; padding :10px 10px; display:flex; 
+		flex-wrap:wrap-reverse;}
+		
+		#conteneur8{ border: 1px solid #999; width:700px; padding :10px 10px; display:flex; 
+		justify-content:space-around;}
+		
+		#conteneur9{ border: 1px solid #999; width:400px; padding :10px 10px; display:flex; 
+		flex-direction : column; height:350px; justify-content:center;}
+		
+		#conteneur10{ border: 1px solid #999; width:700px; padding :10px 10px; display:flex; 
+		align-items:center;  justify-content:center; }		
+		
+		
+		
+		#conteneur11{ margin:auto;border: 1px solid #999; width:700px; padding :10px 10px; display:flex; }		
+		
+		
+		
+		.element1{ background:yellow; padding: 20px; width:100px; }
+		.element2{background:blue; padding: 20px; width:100px;}
+		.element3{background:red; padding: 20px; width:100px;}
+		
+		
+		.element01:nth-child(2){ background:yellow; padding: 20px; width:100px; order:1;}
+		
+		.element02:nth-child(1){background:blue; padding: 20px; width:100px; order:3;}
+		
+		.element03:nth-child(3){background:red; padding: 20px; width:100px; order:2;}
+		
+		
+		
+		</style>
+		
+		
+		
+	</head>
+	
+	<body>
+	
+		<div id="conteneur1">
+
+			<div class="element1">Elément 1</div>
+
+			<div class="element2">Elément 2</div>
+
+			<div class="element3">Elément 3</div>
+
+		</div>
+		
+		
+		<div id="conteneur2">
+
+			<div class="element1">Elément 1</div>
+
+			<div class="element2">Elément 2</div>
+
+			<div class="element3">Elément 3</div>
+
+		</div>
+		
+		
+		<div id="conteneur3">
+
+			<div class="element1">Elément 1</div>
+
+			<div class="element2">Elément 2</div>
+
+			<div class="element3">Elément 3</div>
+
+		</div>
+		
+		
+		<div id="conteneur4">
+
+			<div class="element1">Elément 1</div>
+
+			<div class="element2">Elément 2</div>
+
+			<div class="element3">Elément 3</div>
+
+		</div>
+	
+	
+		<div id="conteneur5">
+
+			<div class="element1">Elément 1</div>
+
+			<div class="element2">Elément 2</div>
+
+			<div class="element3">Elément 3</div>
+
+		</div>
+		
+		
+		<div id="conteneur6">
+
+			<div class="element1">Elément 1</div>
+
+			<div class="element2">Elément 2</div>
+
+			<div class="element3">Elément 3</div>
+
+		</div>
+		
+		
+		<div id="conteneur7">
+
+			<div class="element1">Elément 1</div>
+
+			<div class="element2">Elément 2</div>
+
+			<div class="element3">Elément 3</div>
+
+		</div>
+	
+		<div id="conteneur8">
+
+			<div class="element1">Elément 1</div>
+
+			<div class="element2">Elément 2</div>
+
+			<div class="element3">Elément 3</div>
+
+		</div>
+		
+		
+		<div id="conteneur9">
+
+			<div class="element1">Elément 1</div>
+
+			<div class="element2">Elément 2</div>
+
+			<div class="element3">Elément 3</div>
+
+		</div>
+	
+	
+		<div id="conteneur10">
+
+			<div class="element1">Elément 1</div>
+
+			<div class="element2">Elément 2</div>
+
+			<div class="element3">Elément 3</div>
+
+		</div>
+		
+		
+		<div id="conteneur11">
+
+			<div class="element01">Elément 1</div>
+
+			<div class="element02">Elément 2</div>
+
+			<div class="element03">Elément 3</div>
+
+
+        </div>
+	
+	
+	
+	</body>
+	
+	
+	</html>
