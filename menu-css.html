@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+
+	<HTML>
+
+		<head> 
+
+			<titre>Menu</titre>
+			
+			<meta charset="utf-8"/>
+
+			<link rel= "stylesheet" href="css/menu.css">
+			<style>
+			
+				body{
+				font-family: calibri,serif;
+				margim:0px;
+				padding:0px;
+					
+			}
+
+
+			nav{
+				width:100%;
+				background-color:#424558;
+				
+			}
+
+			nav > ul { 
+				margim:0;
+				padding:0;
+			}
+
+			nav > ul:after{
+				content:"";
+				display:block;
+				clear:both;
+			}
+
+			nav > ul > li {
+				float:left;
+				position:relative;
+				padding: 7px 30px;
+				
+			}
+
+			nav > ul > li > a {
+				
+				padding: 20px 30px;
+				color:#fff;
+			}
+
+			nav > ul > li:hover a {
+				
+				padding: 0px 30px 0px 30px;
+			}
+
+
+			nav  li {
+				list-style-type:none;
+				
+			}
+
+			.submenu {display:none;} 
+
+			nav a {
+				dsplay:inline-block;
+				text-decoration:none;
+				
+				
+			}
+
+
+			nav li:hover .submenu{
+				display:inline-block; position:absolute; top:100%; left:0px; padding:0px;
+				z-index:1000;
+				
+				
+			}
+
+			.submenu li{
+				border-bottom:1px solid #ccc;
+				
+			}
+
+			.submenu li a{ padding:15px 30px; font-size:13px; width:270px; }
+
+
+			.lien1:hover{
+				border-top:6px solid #fa7907 ;
+				background-color:RGBa( 246, 185, 131 ,0.15);
+				padding: 4px 30px;
+				
+			}
+
+			.lien2:hover{
+				border-top:6px solid #0070bb;
+				background-color:RGBa(228,77,28,0.15);
+				padding: 4px 30px;
+				
+			}
+
+
+			.lien3:hover{
+				border-top:6px solid #f1dc4f;
+				background-color:RGBa(000,112,192,0.15);
+				padding: 4px 30px;
+				
+			}
+
+			.lien4:hover{
+				border-top:6px solid  #0b9e04 ;
+				background-color:RGBa( 173, 249, 170 ,0.15);
+				padding: 4px 30px;
+				
+			}
+
+			.lien5:hover{
+				border-top:6px solid #ce06b0;
+				background-color:RGBa(238, 173, 228,0.15);
+				padding: 4px 30px;
+				
+			}
+
+			.lien:hover{
+				border-top:5px solid #e44d26;
+				background-color:RGB(241,211,79,0.15);
+				
+			}
+
+
+			.lien2 .submenu{
+				background-color:RGB(230,100,40);
+				
+			}
+
+
+			.lien3 .submenu{
+				background-color:RGB(250,215,100);
+				
+			}
+
+			.submenu li:hover a { color #EEE; font-weight:bold;}
+
+			.lien2 .submenu li:hover{ background-color:RGB(210,100,60);}
+
+
+			.lien3 .submenu li:hover{ background-color:RGB(000,115,200);}
+
+
+			
+			</style>
+
+		</head>
+
+		<body>
+		
+			<nav>
+			
+			<ul>
+			
+			<li class="lien1"><a href="#">lien1</a></li>
+			<li class="lien2"><a href="#">lien2</a>
+				<ul class="submenu">
+					<li ><a href="#">Sous-lien1</a></li>
+					<li ><a href="#">Sous-lien2</a></li>
+					<li ><a href="#">Sous-lien3</a></li>
+				
+				</ul>
+			
+			
+			
+			</li>
+			
+			
+			
+			<li class="lien3"><a href="lien3">lien3</a>
+				<ul class="submenu">
+					<li ><a href="#">Sous-lien1</a></li>
+					<li ><a href="#">Sous-lien2</a></li>
+					<li ><a href="#">Sous-lien3</a></li>
+				
+				</ul>
+			
+			
+			</li>
+			<li  class="lien4"><a href="lien4">lien4</a></li>
+			<li  class="lien5"><a href="lien5">lien5</a></li>
+			
+			
+			</ul>
+			
+			
+			
+			</nav>
+
+
+
+
+		</body>
+
+	</HTML>
