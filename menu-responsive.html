@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+
+	<HTML lang="fr">
+
+		<head> 
+
+			<titre>Menu</titre>
+			
+			<meta charset="utf-8"/>
+			
+			<meta name="viewport" content="width=device=width, initial-scale=1">
+
+			<link rel= "stylesheet" href="css/menu2.css">
+			
+			<style>
+			
+				body{mrgin:0; padding;0px; font-family: Verdana, calibri}
+
+				nav {width:100%; background-color:#424558;}
+
+				nav >ul { margin:0px; padding:0px;}
+
+				nav li {list-style-type:none;}
+
+				nav > ul >li { float:left; position:relative;}
+
+				nav >ul::after { content :""; display:table; clear:both;}
+
+				.submenu{display:none;}
+
+				nav label{display:none;}
+
+				nav a {display: inline-block; text-decoration:none;}
+
+				nav > ul > li > a{ padding:10px 30px; color:#fff;}
+
+				nav > ul > li:hover a{padding:5px 30px 10px 30px; } 
+
+				nav li:hover .submenu{display:inline-block;  position:absolute; top:100%; left:8px; padding:0px;
+				z-index:1000}
+
+				.submenu li a {padding: 15px 30px; font-size: 13px; color:#222538; width:270px;}
+
+				.submenu li { border-bottom:1px solid #ccc;}
+
+				.lien1:hover{ border-top:5px solid #e44c26; background-color: Rgba(228, 77, 38,0.15)} 
+
+				.lien2:hover{ border-top:5px solid #0070bb; background-color: Rgba(000, 112, 192,0.15)}
+
+				.lien3:hover{ border-top:5px solid #f1dc4f; background-color: Rgba(241, 211, 79,0.15)}
+
+				.lien4:hover{ border-top:5px solid #bbb; background-color: Rgba(228, 228, 228,0.15)}
+
+				.lien5:hover{ border-top:5px solid #cd04af; background-color: Rgb(238, 173, 228,0.15)}
+
+				.lien1 .submenu{ background-color: Rgba(228, 77, 38,0.15)} 
+
+				.lien2 .submenu{  background-color: Rgba(000, 112, 192,0.15)}
+
+				.lien3 .submenu{  background-color: Rgba(241, 211, 79,0.15)}
+
+				.lien4 .submenu{ background-color: Rgba(228, 228, 228,0.15)}
+
+				.submenu li:hover a {color:#eee; font-weight:bold;}
+
+				.lien1 .submenu li:hover { background-color: Rgb(210, 77, 60)} 
+
+				.lien2 .submenu li:hover {  background-color: Rgb(000, 112, 192)}
+
+				.lien3 .submenu li:hover {  background-color: Rgb(200, 175, 79)}
+
+				.lien4 .submenu li:hover { background-color: Rgb(187, 185, 186)}
+
+				.menu-mobile{ display: none; }
+				 
+				nav input[type=checkbox]{ display: none; } 
+
+				nav input[type=checkbox]:checked ~ ul{ display: block; }
+
+
+					@media  only  screen and (max-width:960px){ 
+						.menu-mobile{display:block; color:#FFF;
+						background-color: Rgba(29, 197,151,0.97); text-align:center; padding:12px 0px;}
+						
+						nav ul {display:none;}
+						
+						nav ul li , nav ul li a{ width: 100%; text-align: center;}
+						
+						nav ul li a , nav ul li:hover a{ padding: 10px 0px; }
+						
+						nav li:hover .submenu{ display:block; position:static;}
+						
+
+						
+				}
+
+
+
+
+
+			
+			
+			</style>
+
+		</head>
+
+		<body>
+		
+			<nav>
+			
+				<label for="menu-mobile" class="menu-mobile"> MENU</label>
+				
+				<input type="checkbox" id="menu-mobile" role="button">
+			
+				<ul>
+				
+					<li class="lien1"><a href="#">HTML</a>
+						<ul class="submenu">
+							<li ><a href="#">Sous-lien1</a></li>
+							<li ><a href="#">Sous-lien2</a></li>
+							<li ><a href="#">Sous-lien3</a></li>
+						
+						</ul>
+					
+					</li>
+					<li class="lien2"><a href="#">CSS</a>
+						<ul class="submenu">
+							<li ><a href="#">Sous-lien1</a></li>
+							<li ><a href="#">Sous-lien2</a></li>
+							<li ><a href="#">Sous-lien3</a></li>
+						
+						</ul>
+					
+					
+					
+					</li>
+					
+					
+					
+					<li class="lien3"><a href="lien3">Javascript</a>
+						<ul class="submenu">
+							<li ><a href="#">Sous-lien1</a></li>
+							<li ><a href="#">Sous-lien2</a></li>
+							<li ><a href="#">Sous-lien3</a></li>
+						
+						</ul>
+					
+					
+					</li>
+					<li  class="lien4"><a href="lien4">Services</a>
+							<ul class="submenu">
+							<li ><a href="#">Sous-lien1</a></li>
+							<li ><a href="#">Sous-lien2</a></li>
+							<li ><a href="#">Sous-lien3</a></li>
+						
+						</ul>
+					
+					
+					</li>
+					
+					<li  class="lien5"><a href="lien5">Contacts</a></li>
+				
+				
+				</ul>
+			
+			
+			
+			</nav>
+
+
+
+
+		</body>
+
+	</HTML>
